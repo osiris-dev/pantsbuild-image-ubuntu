@@ -21,5 +21,5 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-RUN mkdir /ci/home/.cache
+RUN mkdir -p /ci/home/.cache
 VOLUME /ci/home/.cache
