@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     locales
 
-RUN pip3 install --upgrade flake8 mypy setuptools pip pre-commit requests pytest
+RUN pip3 install --upgrade pip flake8 mypy setuptools pip pre-commit requests pytest
 
 RUN sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && locale-gen
 
